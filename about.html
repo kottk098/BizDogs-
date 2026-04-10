@@ -1,1 +1,327 @@
+<!DOCTYPE html>
 
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "primary-container": "#800000",
+                    "inverse-on-surface": "#f1f0ef",
+                    "on-secondary-fixed": "#241a00",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#584400",
+                    "on-secondary-container": "#6e5700",
+                    "surface": "#faf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#ff8183",
+                    "surface-bright": "#faf9f8",
+                    "secondary": "#745b00",
+                    "secondary-fixed-dim": "#f1c100",
+                    "secondary-fixed": "#ffe08b",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#b22b1d",
+                    "on-primary-container": "#ff8371",
+                    "inverse-surface": "#2f3130",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#410000",
+                    "primary": "#570000",
+                    "surface-variant": "#e3e2e1",
+                    "secondary-container": "#fecb00",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#8f0f07",
+                    "outline-variant": "#e2bfb9",
+                    "surface-container-highest": "#e3e2e1",
+                    "on-surface-variant": "#5a413d",
+                    "on-tertiary-fixed": "#410008",
+                    "inverse-primary": "#ffb4a8",
+                    "surface-container-high": "#e9e8e7",
+                    "tertiary": "#56000e",
+                    "on-background": "#1a1c1c",
+                    "outline": "#8e706c",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeed",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffdad9",
+                    "on-tertiary-fixed-variant": "#92001f",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "primary-fixed": "#ffdad4",
+                    "tertiary-container": "#7f001a",
+                    "surface-container-low": "#f4f3f2",
+                    "surface-dim": "#dadad9",
+                    "background": "#faf9f8",
+                    "tertiary-fixed-dim": "#ffb3b2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #faf9f8; color: #1a1c1c; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .tonal-shift-no-border { border: none !important; }
+        .tonal-layering { background-color: #e9e8e7; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f8] dark:bg-zinc-950 backdrop-blur-md bg-opacity-80 shadow-[0_8px_24px_rgba(26,28,28,0.06)] tonal-shift-no-border">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-lg font-extrabold tracking-tighter text-[#800000] dark:text-red-500 font-headline">
+                BizDogs Living &amp; Learning Community (LSBE)
+            </div>
+<div class="hidden md:flex gap-8 items-center font-['Manrope'] font-medium tracking-tight">
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-[#800000] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#800000] border-b-2 border-[#fecb00] pb-1 dark:text-red-400" href="#">About Us</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-[#800000] transition-colors duration-300" href="#">Events</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-[#800000] transition-colors duration-300" href="#">Join the Pack</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-[#800000] transition-colors duration-300" href="#">Contact</a>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-xl scale-95 duration-150 ease-in-out hover:brightness-110">
+                    Join the Pack
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[0.75rem] font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+                    Academic Excellence
+                </div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary-container leading-[1.1] tracking-tight">
+                    The Core of <br/><span class="text-secondary">BizDogs</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                    We bridge the gap between the classroom and the real world, fostering a community of driven business students at UMD.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="work_outline">work_outline</span>
+<span class="font-semibold text-sm uppercase tracking-wide">Professional Development</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="groups">groups</span>
+<span class="font-semibold text-sm uppercase tracking-wide">Social Gatherings</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
+<span class="font-semibold text-sm uppercase tracking-wide">Site Visits</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="font-semibold text-sm uppercase tracking-wide">Community Service</span>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary-container opacity-20 rounded-3xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Students collaborating" class="relative z-10 w-full h-[600px] object-cover rounded-3xl shadow-2xl" data-alt="Group of diverse college students sitting in a modern lounge area with laptops, engaged in an active and happy discussion at UMD" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxMaevNCTT39J5pMrwDlTbeYpHjhkMA-PAy0Om9RUXc2hSVA985Yjcl-1Plb64AeYkXdrVV8MSV2VbQm2YlcnDF382rswt3uauRfyTsX6M1kv-2rrNfFwtC1irynas1usfVGNB5Yl_Q0yR1kvYe3Xuy_nFTHieYjHCmE3bkKuOsYh7xgQxbjEQu965fvsxg7ctMUdFNxsbHvJwc3YteXbArPSIdpax0m_2LVwZNCZvEtCVUXwxi0CVGiO3CPCEgtvSp1t1H1ntvNk"/>
+</div>
+</section>
+<!-- Why Join Section (Value Prop) -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Why Join the Pack?</h2>
+<div class="w-24 h-1 bg-secondary-container mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Academic Edge -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl space-y-6 hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Academic Edge</h3>
+<p class="text-on-surface-variant leading-relaxed">Dedicated study groups within the residence hall ensure you never tackle a tough finance or accounting course alone.</p>
+</div>
+<!-- Exclusive Access -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl space-y-6 hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="hub">hub</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Exclusive Access</h3>
+<p class="text-on-surface-variant leading-relaxed">Connect directly with LSBE alumni and local business leaders through private networking mixers and site visits.</p>
+</div>
+<!-- Seamless Transition -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl space-y-6 hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="bolt">bolt</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Seamless Transition</h3>
+<p class="text-on-surface-variant leading-relaxed">Our early move-in program lets you get settled, meet your peers, and learn the campus before classes even begin.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Gallery: Program Highlights -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-headline font-bold text-on-surface">Program Highlights</h2>
+<p class="text-on-surface-variant mt-4 text-lg">A glimpse into the life of a BizDog.</p>
+</div>
+<div class="h-[2px] flex-grow mx-12 bg-surface-variant hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group">
+<img alt="Lunch with faculty" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional candid of students and professors sitting around a large dining table sharing a meal and laughing during a formal lunch event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo6DfGuqwSH8dQGQ4Qo0tnPx_NvwdapjGbCUdNsQtK3nPUiZG1641yWJdT_yaxhXu_D5zUdqLxPqrXeDD22nzuRKEy3j9aPp2kltisQPjxNUGVH7x_6uDbRkKK3HTwpC8HLY4zQ-1r5CwAzR-y01Ur8i2YAj5iIWFnCIoH9ra77FzMqEZlhHmud4mGLiqEaSYW77q_jTWe_jzLmqguqx6gRPCD2CzIP4bSTU3zwjv0CG8vOuj_wibvv4i6yneFYEyGMcjRbsfwXx4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent flex items-end p-8">
+<div>
+<h4 class="text-white text-2xl font-bold font-headline">Lunch with Faculty</h4>
+<p class="text-white/80">Connecting students and mentors outside the classroom.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 relative rounded-3xl overflow-hidden group">
+<img alt="Orientation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dynamic wide shot of a university orientation event with students wearing maroon shirts cheering and clapping in a large hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXwxcBz_2QrTkKvZb1kp4o2NRv4O5kTtW5e-dR_c_8kI5dRB4CCbugHOcjvv-YtnFudsO3gj9-lgc1Wn6ulic5gxh1RLXbHPbIDtOb94pdAQdayCWcb6g5xeVvwQEI6S8QYvzZ3HdZucdEJSvmMREmgqSE7GDcfWiSaNXs0UqkgHAafM71wWZ3ZAg3alZx0BdRT7YrhBEsqjEVmUas2205K1xS1UCwoeVxjjqOtqzTehtXgfVNnXR-31MNLAuJIcBKIj5z-VlCM8g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-8">
+<h4 class="text-white text-xl font-bold font-headline">Orientation Week</h4>
+</div>
+</div>
+<div class="md:col-span-1 relative rounded-3xl overflow-hidden group">
+<img alt="Study sessions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of three students focused on a textbook in a library setting, warm evening light through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcV9qEn6Z6pBSwr_KxdX9MUHUPFYnBj-Szyb-29oCUlvlcajhJ3vBcdIYhk0A6lx3WcHNioKTZyBGppv0xw_nnseswVqlu4OYkJTFXM4uJo7Oy_AnUYerh2M5KzrzC7tlf5Wnz9vyfEoxnUO1P0_b4bofdshzEBpqiuOAlGv-YV9z2Qf0wBXvMhqgaVA3EqQx0a_V1MdkTGV7SVB_qbai9wy4IY68bMX0S9lVOF20MGPFhdJ5tYBwwXPCEuLh4wEAJYCrGtmYM29w"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-white font-bold">Study Sessions</span>
+</div>
+</div>
+<div class="md:col-span-1 relative rounded-3xl overflow-hidden group bg-primary-container flex flex-col items-center justify-center text-center p-6">
+<span class="material-symbols-outlined text-secondary-container text-5xl mb-4" data-icon="add_circle">add_circle</span>
+<p class="text-white font-bold font-headline">Many More <br/>Experiences</p>
+</div>
+</div>
+</section>
+<!-- BizDogs Council -->
+<section class="bg-surface-container-high py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="text-4xl font-headline font-bold text-on-surface">BizDogs Council</h2>
+<p class="text-on-surface-variant mt-2">The student leadership driving our community forward.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Leader 1 -->
+<div class="space-y-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg border-4 border-surface-container-lowest">
+<img alt="Council President" class="w-full h-full object-cover" data-alt="Professional headshot of a smiling young man in a business casual shirt with a soft office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDalBT0FR5HXI_Fw41Xvr0BvW5qGw_WRat4Owk4-9mkoGPRaBtE1xsOT5OAUBjnT2hPGOM7efT7oVJyHCIZaO8jbgbw_Pc0n9U7EequCpG7ZMmRCDDtugfB_hYJgewDTBv_h44NA3yXKDnI9GBb-CDNSiMmrt9gLNCOTtyyoqQ3aQaxnE_oVyPwUw_RSBLiDivcGV50HqYe2J-IhRatIUOb8pFa6YqgaCWxLx72tACO-LGwHlW9kCjiG01TBnK17okdWBpW33VIuMY"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Jordan Miller</h4>
+<p class="text-primary-container text-sm font-bold uppercase tracking-widest">President</p>
+<p class="text-on-surface-variant text-sm mt-2">Marketing major, focused on fostering inclusive networking environments.</p>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="space-y-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg border-4 border-surface-container-lowest">
+<img alt="Vice President" class="w-full h-full object-cover" data-alt="Professional headshot of a smiling young woman with glasses and professional attire, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDPL6gIPrmGzmKp49j0wS60woPEUqPzDzHffikPWbIY2WnPJ8uKOjh2BDxULV-8e4r1qGB1v7dmrNnocMd12T-90tEvqp7xYzrErnoe8j5s_MS0PIQJ3SGMxC27W8xs4Z6lRlzJSc6ZcYSq9D6LwampcnVFrcvk5-SsEXUZMm0ml0eoVUkR6pvphSNYnUxpo--IAfUVIuTuCoMdgp8ipPZxXRqr3DuzDIp4EuitNdCme_qNKJYTIjQPDdze-JkBhjezF9F1jcI0Cs"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Elena Rodriguez</h4>
+<p class="text-primary-container text-sm font-bold uppercase tracking-widest">VP of Engagement</p>
+<p class="text-on-surface-variant text-sm mt-2">Finance senior, passionate about academic peer support programs.</p>
+</div>
+</div>
+<!-- Leader 3 -->
+<div class="space-y-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg border-4 border-surface-container-lowest">
+<img alt="Treasurer" class="w-full h-full object-cover" data-alt="Modern headshot of a young man in a polo shirt, smiling confidently, university campus blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTzxcx5Lq4Iqf6BAqFMyxydK2ROfCLG3_3oOFt7OuYdzM1jvK_Liw8NcA8dlvgcIRulxCUey6AZA9lYpZrdWyQIBPxE6AqXlo7k7PdLK7C0r_8U_YJiPid0oc6bi2CRePXJY4vy2hJWH5b1QT7euhNgDcznm7hLv-si070w6qpoG_T_pAY_DlCekXrtwppSgCkRtLfVkSzHAkPaxX4tcrelduRpKj8rEFWpI8Uju7tIJkxU8KU2Ek9kXWFRTHRMpv51-MOakEvOAU"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Marcus Chen</h4>
+<p class="text-primary-container text-sm font-bold uppercase tracking-widest">Treasurer</p>
+<p class="text-on-surface-variant text-sm mt-2">Accounting major, streamlining community events and logistics.</p>
+</div>
+</div>
+<!-- Leader 4 -->
+<div class="space-y-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg border-4 border-surface-container-lowest">
+<img alt="Secretary" class="w-full h-full object-cover" data-alt="Close up professional portrait of a young woman with a friendly smile, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0iikSVhI7NI9UWlMkt5B6xkQ0zbHzqh2CBEgassTceZ2WpN2o1OPiFHyfkrp3Dd2Gkm1glDa0uhSIo_6tJ8IC6vXbn8pJwBlwouTGLEkK4BGPDAB5Xn_lZiOezRQCeP36QuBWoV8-Ge5NQxJq-PFc7_3wXT_0pOvQe9cLnPDkzmIKq8ro2CC-gBVIj-xiMP4LB6MydACu2Fhucux157n1VzcXrOc6ql088lcKeCI_TYMaAdWI19M8m0oPP0QCfqgqqByylfMYrRA"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Sarah Jenkins</h4>
+<p class="text-primary-container text-sm font-bold uppercase tracking-widest">Secretary</p>
+<p class="text-on-surface-variant text-sm mt-2">Management student, overseeing community communications.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-8 max-w-5xl mx-auto overflow-hidden">
+<div class="relative bg-primary-container rounded-[3rem] p-12 md:p-24 text-center">
+<span class="material-symbols-outlined text-secondary-container text-6xl mb-8" data-icon="format_quote" data-weight="fill">format_quote</span>
+<div class="space-y-8">
+<p class="text-2xl md:text-3xl text-white font-headline leading-relaxed italic">
+                        "Joining BizDogs was the best decision of my freshman year. I found my future business partners and my best friends before the first week of classes even ended."
+                    </p>
+<div class="flex flex-col items-center">
+<div class="w-16 h-1 bg-secondary-container mb-4"></div>
+<p class="text-white font-bold text-lg tracking-wide uppercase">Alex Thompson, Class of '26</p>
+</div>
+</div>
+<!-- Simple Slider Dots -->
+<div class="flex justify-center gap-3 mt-12">
+<div class="w-3 h-3 bg-secondary-container rounded-full"></div>
+<div class="w-3 h-3 bg-white/20 rounded-full"></div>
+<div class="w-3 h-3 bg-white/20 rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8 text-center max-w-4xl mx-auto">
+<h2 class="text-4xl font-headline font-extrabold text-primary-container mb-6">Ready to Lead the Pack?</h2>
+<p class="text-lg text-on-surface-variant mb-10">Applications are currently open for the upcoming semester. Secure your spot in the BizDogs community today.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-container text-on-primary px-10 py-5 rounded-xl font-bold text-lg shadow-lg hover:brightness-110 transition-all">
+                    Apply Now
+                </button>
+<button class="bg-surface-container-highest text-primary-container px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all">
+                    Contact Us
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e9e8e7] dark:bg-zinc-900 w-full py-12 tonal-layering">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-[#800000] dark:text-red-500 font-extrabold text-xl font-headline">
+                    BizDogs Living &amp; Learning Community
+                </div>
+<p class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-zinc-500 dark:text-zinc-500">
+                    © 2024 BizDogs LLC. LSBE 111A, Duluth, MN 55812
+                </p>
+</div>
+<div class="flex flex-col md:items-end justify-center space-y-2">
+<a class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-[#800000] dark:text-red-400 opacity-80 hover:opacity-100 hover:text-[#fecb00] transition-colors duration-300" href="mailto:bizdogs@d.umn.edu">
+                    bizdogs@d.umn.edu
+                </a>
+<a class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-[#800000] dark:text-red-400 opacity-80 hover:opacity-100 hover:text-[#fecb00] transition-colors duration-300" href="tel:+12187266594">
+                    +1 218 726 6594
+                </a>
+</div>
+</div>
+</footer>
+</body></html>
